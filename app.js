@@ -12,10 +12,10 @@ const api = new Api({ rpc, signatureProvider, textDecoder: new
 TextDecoder(), textEncoder: new TextEncoder() });
 
 
-function transfer(data){
+function sendTokenCrypto(data){
     api.transact({
         actions: [{
-        account: data.smartContract,
+        account: data.smartContract, //change to smart contract
         name: 'transfer',
         authorization: [{
             actor: data.sender, //change to sender account
@@ -36,6 +36,32 @@ function transfer(data){
     });
 }
 
-transfer(data);
+
+function sendNFT(data){
+    api.transact({
+        actions: [{
+        account: data.smartContract, //change to smart contract
+        name: 'transfer',
+        authorization: [{
+            actor: data.sender, //change to sender account
+            permission: 'active',
+        }],
+        data: {
+            from: data.sender, //change to sender account
+            to: data.receiver, //change to receiver account
+            id_nft: data.id_nft, //change to id_nft will be transferred
+            memo: data.memo// memo
+            },
+        }]
+    }, {
+        blocksBehind: 3,
+        expireSeconds: 30,
+    }).then((res) => {
+        console.log(res)
+    });
+}
+
+sendTokenCrypto(data);
+sendNFT(data);
 
 
