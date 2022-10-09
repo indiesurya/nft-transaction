@@ -1,12 +1,12 @@
 # Transaction NFT and Token Crypto
 
-Transaction NFT and Token Crypto using `node.js`. This script using `vexanium` packages for transaction in blockchain. this script just runs on `node`. if you want to implement it to other applications, just adjust it. 
+Transaction NFT and Token Crypto using `node.js`. This script using `vexanium` packages for transaction in blockchain. This script just runs on `node`, if you want to implement it to other applications, just adjust it. 
 
 # How to install this script
 
 Step to install this script:
 
-Git clone this repo
+Clone this repo
 
     git clone https://github.com/indiesurya/nft-transaction.git
 
@@ -30,4 +30,4 @@ For smart contract token you can check in this [site](https://vexascan.com/token
 
 # References
 
-This script inspire from documentation of [vexaniumjs](https://github.com/vexanium/vexaniumjs), [eosjs](https://github.com/EOSIO/eosjs) and [developers eos]https://developers.eos.io/manuals/eosjs/latest/index)
+This script inspire from documentation of [vexaniumjs](https://github.com/vexanium/vexaniumjs), [eosjs](https://github.com/EOSIO/eosjs) and [developers.eos.io](https://developers.eos.io/manuals/eosjs/latest/index)
