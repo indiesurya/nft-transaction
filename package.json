@@ -1,0 +1,37 @@
+{
+  "name": "nft-transaction",
+  "version": "1.0.0",
+  "description": "nft-transaction using node",
+  "main": "app.js",
+  "dependencies": {
+    "bn.js": "^5.2.0",
+    "brorand": "^1.1.0",
+    "elliptic": "^6.5.4",
+    "hash.js": "^1.1.7",
+    "hmac-drbg": "^1.0.1",
+    "inherits": "^2.0.4",
+    "minimalistic-assert": "^1.0.1",
+    "minimalistic-crypto-utils": "^1.0.1",
+    "node-fetch": "^2.6.6",
+    "node-schedule": "^2.1.0",
+    "pako": "^2.0.3",
+    "util": "^0.12.4",
+    "vexaniumjs": "^22.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indiesurya/nft-transaction.git"
+  },
+  "keywords": [
+    "nft-transaction"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indiesurya/nft-transaction/issues"
+  },
+  "homepage": "https://github.com/indiesurya/nft-transaction#readme"
+}
